@@ -10,7 +10,7 @@ Planned sections:
 4. Clustering (not started)
 5. Capacity analysis (not started)
 
-## 1. EDA — done
+## 1. EDA
 
 - **Fleet expansion**: from 200 to 1,098 stations across all 25 wards, ridership up 5x (1.5M trips in 2017 to 7.8M in 2025)
 - **Trips per station**: the expand/absorb cycle: fast fleet expansion dilutes demand per station, slower growth lets it catch up
