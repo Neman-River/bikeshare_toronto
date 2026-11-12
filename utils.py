@@ -252,6 +252,32 @@ def recover_station_ids(df, stations_vocab, stations_actual_names):
     return df
 
 
+def clean_trip_duration(df):
+    """Drop rows that are a tech glitch rather than a real trip (a bike
+    checked out and immediately redocked), and recover trip_duration from
+    start/end time where it's missing but the gap is long enough to trust.
+
+    trip_duration == 0 shows up every year from 2020 on and grows over time
+    (tens of thousands of rows by 2024-2026) - these aren't real trips.
+    A handful of rows (2019, 2020) have trip_duration missing instead; where
+    the start/end gap is also <= 60s there's no way to tell a real short trip
+    from the same glitch, so those get dropped too rather than filled in with
+    noise. Everything else with a missing duration is filled from the gap.
+    """
+    diff_seconds = (df['end_time'] - df['start_time']).dt.total_seconds()
+
+    drop_zero_no_end = (df['trip_duration'] == 0) & df['end_time'].isna()
+    drop_unrecoverable = df['trip_duration'].isna() & (diff_seconds.isna() | (diff_seconds <= 60))
+    df = df[~(drop_zero_no_end | drop_unrecoverable)].copy()
+    diff_seconds = diff_seconds[df.index]
+
+    missing = df['trip_duration'].isna()
+    if missing.any():
+        df.loc[missing, 'trip_duration'] = diff_seconds[missing].astype(df['trip_duration'].dtype)
+
+    return df[df['trip_duration'] != 0]
+
+
 def optimize_trip_dtypes(df):
     if 'start_time' in df.columns:
         df['start_time'] = pd.to_datetime(df['start_time'])
@@ -270,6 +296,23 @@ def optimize_trip_dtypes(df):
     df[int_cols] = df[int_cols].apply(pd.to_numeric, downcast='integer')
     float_cols = df.select_dtypes(include='float64').columns
     df[float_cols] = df[float_cols].apply(pd.to_numeric, downcast='float')
+    return df
+
+
+def _fix_2016_q4_dates(df):
+    """2016 Q4's trip_start_time/trip_stop_time columns mix two representations of the
+    same day-first (DD/MM/YYYY) source data: unambiguous rows (day > 12) stayed as literal
+    text, while ambiguous rows (day <= 12) got silently auto-converted assuming month-first,
+    swapping day and month (e.g. true Oct 1 became Jan 10). Confirmed against the raw sheet:
+    every non-text value there has day <= 12, so the swap is unconditionally safe."""
+    df = df.copy()
+    for col in ['trip_start_time', 'trip_stop_time']:
+        is_text = df[col].map(lambda v: isinstance(v, str))
+        df.loc[is_text, col] = pd.to_datetime(df.loc[is_text, col], dayfirst=True)
+        df.loc[~is_text, col] = df.loc[~is_text, col].map(
+            lambda d: d.replace(day=d.month, month=d.day)
+        )
+        df[col] = pd.to_datetime(df[col])
     return df
 
 
@@ -320,7 +363,17 @@ def load_year(year, raw_dir="raw_data", stations_vocab=None, stations_actual_nam
 
     if files[0].suffix == '.xlsx':
         header = 1 if year == '2014-2015' else 0
-        frames = [pd.read_excel(f, header=header) for f in files]
+        if year == '2014-2015':
+            frames = [pd.read_excel(f, header=header) for f in files]
+        else:
+            # 2016's workbook splits trips across one sheet per quarter (Q3, Q4) -
+            # reading with the default sheet_name=0 silently kept only Q3.
+            frames = []
+            for f in files:
+                for sheet_name, sheet_df in pd.read_excel(f, sheet_name=None, header=header).items():
+                    if year == 2016 and 'Q4' in sheet_name:
+                        sheet_df = _fix_2016_q4_dates(sheet_df)
+                    frames.append(sheet_df)
     elif year == 2020:
         frames = [
             _repair_2020_10(f) if f.name == '2020-10.csv' else read_csv_robust(f)
@@ -350,4 +403,31 @@ def load_year(year, raw_dir="raw_data", stations_vocab=None, stations_actual_nam
     if stations_vocab is not None and stations_actual_names is not None:
         df = recover_station_ids(df, stations_vocab, stations_actual_names)
 
-    return optimize_trip_dtypes(df)
+    df = optimize_trip_dtypes(df)
+    return clean_trip_duration(df)
+
+
+def load_2015_od(raw_dir="raw_data"):
+    """2015's ridership file predates per-trip records - each month sheet only
+    publishes station-pair counts (Start/End Terminal x Casual/Registered),
+    not individual trips with a start_time/end_time/trip_duration. So this
+    returns one row per (month, start_station_id, end_station_id) instead of
+    forcing it into the per-trip `trips` schema the other years use.
+    """
+    path = Path(raw_dir) / "bikeshare-ridership-2014-2015.xlsx"
+    xl = pd.ExcelFile(path)
+    month_sheets = [s for s in xl.sheet_names if re.match(r"^2015-\d{2} (Trips|Routes)$", s)]
+
+    frames = []
+    for sheet in month_sheets:
+        df = pd.read_excel(xl, sheet_name=sheet, header=1)
+        df.columns = ["start_station_id", "end_station_id", "casual_trips", "member_trips", "total_trips"]
+        df = df[df["start_station_id"] != "Total"]  # drop the sheet's trailing summary row
+        df["month"] = pd.Period(sheet.split(" ")[0], freq="M")
+        frames.append(df)
+
+    od = pd.concat(frames, ignore_index=True)
+    od[["casual_trips", "member_trips"]] = od[["casual_trips", "member_trips"]].fillna(0)
+    for col in ["start_station_id", "end_station_id", "casual_trips", "member_trips", "total_trips"]:
+        od[col] = pd.to_numeric(od[col], errors="coerce").astype("Int32")
+    return od
