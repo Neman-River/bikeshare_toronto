@@ -1,6 +1,6 @@
 # Toronto Bike Share — Growth, Rhythms & Capacity
 
-Analysis of Toronto's bike share system, 2016–2026. Report: **[neman-river.github.io/bikeshare_toronto](https://neman-river.github.io/bikeshare_toronto/)**
+Analysis of Toronto's bike share system, 2016–2026. Report: **[neman-river.github.io/bikeshare_toronto](https://neman-river.github.io/bikeshare_toronto/overview.html)**
 
 Work in progress.
 Planned sections:
