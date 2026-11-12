@@ -1,0 +1,298 @@
+---
+title: "Overview"
+page-layout: full
+---
+
+## Fleet expansion
+
+```{=html}
+<p style="font-size:16px; line-height:1.6; color:#1a1a1a; max-width:900px;">
+Started in 2016 — after an earlier 2014–2015 pilot — Toronto's Bike Share has grown to <b>1,098 stations</b> covering all <b>25 wards</b>. The map below shows how that expansion spread across the city, year by year. The system has grown significantly since 2016, and ridership has grown right along with it.
+</p>
+
+<iframe src="site_assets/stations_map_timelapse_by_year.html" width="100%" height="600" style="border:none;"></iframe>
+```
+
+```{=html}
+<p style="font-size:18px; color:#555; margin-bottom:8px;">Then expanded outward in waves:</p>
+
+<div style="position:relative; padding-top:20px; margin-bottom:16px;">
+  <div style="position:absolute; top:27px; left:0; right:0; height:2px; background:#B0B5BA; z-index:0;"></div>
+  <div style="display:flex; justify-content:space-between; gap:6px; position:relative; z-index:1;">
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2016</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Spadina-Fort York, Toronto Centre, Toronto-Danforth, University-Rosedale, Toronto-St. Paul's, Davenport, Parkdale-High Park, Beaches-East York</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2017</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Etobicoke-Lakeshore, Scarborough Southwest</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2018</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Don Valley West, Eglinton-Lawrence</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2019</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Don Valley East</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2020</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Scarborough-Guildwood, Scarborough-Rouge Park, York Centre, Humber River-Black Creek, Etobicoke Centre, York South-Weston</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#B0B5BA; border:2px solid white; box-shadow:0 0 0 2px #B0B5BA; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#888;">2021–2022</div>
+      <div style="font-size:12px; color:#888; font-style:italic; margin-top:4px;">Expansion paused</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2023</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Etobicoke North, Willowdale</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2024</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Don Valley North, Scarborough Centre</div>
+    </div>
+
+    <div style="flex:1; text-align:center; min-width:0; padding:0 3px;">
+      <div style="width:14px; height:14px; border-radius:50%; background:#FF6B4A; border:2px solid white; box-shadow:0 0 0 2px #FF6B4A; margin:0 auto 10px;"></div>
+      <div style="font-weight:700; font-size:16px; color:#1B3A5C;">2025</div>
+      <div style="font-size:12px; color:#333; margin-top:4px;">Scarborough-Agincourt, Scarborough North — all <b style="color:#FF6B4A;">25 wards</b></div>
+    </div>
+
+  </div>
+</div>
+```
+#### Some Vanity Metrics
+```{=html}
+<iframe src="site_assets/trips_stations_panel.html" width="100%" height="420" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+
+Ridership grew about 5x, from 1.5M trips in 2017 to 7.8M in 2025, and kept rising every year, including 2020. 
+Over the same period the network grew 4x, from 265 to 1,048 stations. Ridership grew faster than the network: 
+trips per station rose from about 5,700 in 2017 to about 7,400 in 2025.
+
+
+#### Let's look at the ratios
+```{=html}
+<iframe src="site_assets/trips_per_station_panel.html" width="100%" height="420" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+
+The <b>expand</b>/<b>absorb</b> cycle shows up directly: years the fleet grows fast (orange) dilute demand per station; 
+slower years (navy) let it catch back up.
+Rides per station peaked at <b>7,910</b> in 2024, the year fleet growth slowed the most, and each expansion wave (2017–2020, then 2025) briefly diluted demand before it recovered.
+The daily-average chart on the right tells the same.
+*Treat 2016 and 2026 cautiously- both are partial years.
+
+```{=html}
+<details class="growth-table" style="margin: 24px 0;">
+  <summary style="cursor:pointer; font-size:16px; color:#555;">View the data behind these charts</summary>
+  <style>
+    .growth-table table { width:100%; border-collapse:collapse; margin-top:16px; font-size:15px; color:#1a1a1a; }
+    .growth-table th { text-align:left; color:#555; font-weight:600; padding:6px 12px 6px 0; border-bottom:2px solid #B0B5BA; }
+    .growth-table td { padding:6px 12px 6px 0; border-bottom:1px solid #eee; }
+  </style>
+  <table>
+    <thead>
+      <tr>
+        <th>Year</th>
+        <th>Trips</th>
+        <th>YoY % (trips)</th>
+        <th>Stations</th>
+        <th>YoY % (fleet)</th>
+        <th>Trips per station</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+    <td>2016</td>
+    <td>0.6M</td>
+    <td></td>
+    <td>200</td>
+    <td></td>
+    <td>2,928</td>
+  </tr><tr>
+    <td>2017</td>
+    <td>1.5M</td>
+    <td>+155%</td>
+    <td>265</td>
+    <td>+32%</td>
+    <td>5,632</td>
+  </tr><tr>
+    <td>2018</td>
+    <td>1.9M</td>
+    <td>+29%</td>
+    <td>359</td>
+    <td>+36%</td>
+    <td>5,356</td>
+  </tr><tr>
+    <td>2019</td>
+    <td>2.4M</td>
+    <td>+27%</td>
+    <td>469</td>
+    <td>+31%</td>
+    <td>5,201</td>
+  </tr><tr>
+    <td>2020</td>
+    <td>2.9M</td>
+    <td>+19%</td>
+    <td>611</td>
+    <td>+30%</td>
+    <td>4,762</td>
+  </tr><tr>
+    <td>2021</td>
+    <td>3.6M</td>
+    <td>+23%</td>
+    <td>627</td>
+    <td>+3%</td>
+    <td>5,693</td>
+  </tr><tr>
+    <td>2022</td>
+    <td>4.6M</td>
+    <td>+29%</td>
+    <td>682</td>
+    <td>+9%</td>
+    <td>6,768</td>
+  </tr><tr>
+    <td>2023</td>
+    <td>5.7M</td>
+    <td>+24%</td>
+    <td>813</td>
+    <td>+19%</td>
+    <td>7,022</td>
+  </tr><tr>
+    <td>2024</td>
+    <td>6.9M</td>
+    <td>+22%</td>
+    <td>879</td>
+    <td>+8%</td>
+    <td>7,898</td>
+  </tr><tr>
+    <td>2025</td>
+    <td>7.8M</td>
+    <td>+12%</td>
+    <td>1,048</td>
+    <td>+19%</td>
+    <td>7,449</td>
+  </tr><tr>
+    <td>2026</td>
+    <td>6.8M</td>
+    <td>-13%</td>
+    <td>1,098</td>
+    <td>+5%</td>
+    <td>6,210</td>
+  </tr>
+    </tbody>
+  </table>
+</details>
+```
+
+## Are new stations cannibalizing the original ones?
+
+#### Cohort analysis: track the **183 original 2016 stations** as a fixed cohort and compare their own growth to the system's.
+
+```{=html}
+<iframe src="site_assets/cannibalization_panel.html" width="100%" height="420" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+There’s **no clear cannibalization** signature. 
+The cohort’s trips grew almost every year, just more slowly than the whole system.
+That’s expected dilution, not cannibalization. The fleet grew to roughly 5x the number of stations around this cohort.
+The chart on the right makes that gap explicit: indexed to 2017, the entire system reached <b>523</b> by 2025 (a <b>5.2x</b> increase), while the original cohort reached only <b>202</b> (roughly <b>2x</b>) — real growth, just spread across far more stations.
+The only real stall for the cohort was <b>2025 (−0.8%)</b>, the year with the most expansion.
+That fits the same <b>expand-then-absorb cycle</b> shown in the Trips per Station chart.
+
+
+## Segment rhythms: members vs. casual riders
+
+Beyond year-over-year growth, the network has a daily and seasonal rhythm of its own.
+
+### Daily
+```{=html}
+<iframe src="site_assets/departure_time_panel.html" width="100%" height="450" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+At 5 p.m. on almost any weekday, this is what Toronto's bikeshare network looks like: trips surge to a sharp evening peak, repeating itself every single day.
+Members cluster almost entirely into the 8 AM and 5-7 PM commute windows.
+Casual riders spread more evenly across the afternoon — a leisure pattern, not a commute pattern.
+Across 2023-2025, the **5-7 PM** window alone accounts for **20%** of all trips (over 4 million) — more than double the morning peak.
+
+
+### Weekly 
+
+```{=html}
+<iframe src="site_assets/weekly_type_panel.html" width="100%" height="420" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+
+Members ride most on weekdays, with Tuesday and Wednesday at about 16% of their weekly trips each, then drop to roughly 12% on 
+Saturday and 11% on Sunday, which fits a commuting pattern. Casual riders do the opposite: their trips stay flat at about 12–13% 
+from Monday to Thursday, rise on Friday (14.4%) and peak on the weekend, with Saturday at about 18% of their weekly trips. 
+Members use the bikes for routine travel, while casual riders use them mostly for leisure.
+
+### Yearly
+
+```{=html}
+<iframe src="site_assets/monthly_share_2025_panel.html" width="100%" height="560" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+Member share of trips holds at <b>92-93%</b> in Jan-Feb, drops as low as <b>65%</b> at the August peak, then climbs straight back to <b>89%</b> by December — casual/tourist riders show up for the summer and largely disappear for the winter.
+
+
+```{=html}
+<iframe src="site_assets/monthly_type_panel.html" width="100%" height="560" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+Ridership follows a strong seasonal cycle. It peaks every July–August, falls to roughly 100–200k trips a month in winter, 
+and each summer is higher than the last: about 0.9M trips a month in 2024, 1.2M in 2025 and 1.25M in 2026. Members make up most trips 
+and look steadier, but their summer peaks levelled off at about 800k in both 2025 and 2026. Casual riders are much more seasonal,
+dropping to almost nothing in winter. Their peaks have kept rising, from about 270k in 2024 to 410k in 2025 and 470k in 2026,
+so for now casual riders are driving most of the 2026 growth.
+
+### Yearly as daily time-series
+
+```{=html}
+<iframe src="site_assets/daily_type_panel.html" width="100%" height="750" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+At daily resolution, we can see that some spikes or dips in network-wide ridership are driven by one specific segment.
+For example, the June 14, 2025 and May 18, 2026 jumps were driven by Casual riders, while Member ridership stayed close to normal.
+The August 5, 2024 drop, on the other hand, was driven by Members, with Casual ridership behaving normally.
+Some events push both segments the same direction; others push them in opposite directions.
+I'll explore this further in the time series analysis section.
+May 18, 2026 and August 5, 2024 are both statutory holidays (Victoria Day and Civic Holiday).
+
+## Rides by ward, 2026
+
+Ridership isn't spread evenly: a few downtown wards (Spadina-Fort York, University-Rosedale, Toronto Centre) dominate raw trip counts, 
+partly just because they have more stations. Normalizing by station count shows where demand is actually most intense.
+
+```{=html}
+<iframe src="site_assets/ward_and_stations_map_2026.html" width="100%" height="650" style="border:none;"></iframe>
+```
+
+## A few more interesting facts
+
+```{=html}
+<iframe src="site_assets/busiest_stations_routes_panel.html" width="100%" height="260" style="border:none; overflow:hidden;" scrolling="no"></iframe>
+```
+
+<b>York St / Queens Quay W</b> is the single busiest station in the system — over 376,000 trips to date, 
+anchored by the <em>financial district and the waterfront</em>.
+Look at the busiest <em>routes</em>: 
+4 of the 5 most popular point-to-point trips shuttle back and forth between the <b>Centre Island and Ward's Island ferry docks</b> — 
+a loop almost nobody would ride to get to work. It's day-trippers circling the Toronto Islands, not commuters.
+
+
+Members follow a daily, commuter-driven rhythm, while casual riders follow weekly and seasonal patterns. 
+In the next sections, I’ll look at how much of these differences can be explained by time of day, season, weather 
+and other factors such as location, and whether we can predict demand accurately enough to make better decisions about how 
+the network grows and changes.

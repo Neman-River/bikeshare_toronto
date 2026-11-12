@@ -1,0 +1,11 @@
+---
+title: "Station Capacity"
+---
+
+**Guiding question:** Which stations are maxed out and turning riders away, and which sit mostly empty, wasting capacity?
+
+
+- How "full" or "empty" a station runs, relative to its own size and the system average
+- Stations that look like candidates for expansion (consistently near capacity)
+- Stations that look like candidates for consolidation or removal (consistently underused)
+- How this picture changes by season and by time of day, since a station empty at 2 pm and full at 5 pm isn't wasteful — it could be just a commuter station

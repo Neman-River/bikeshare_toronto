@@ -1,0 +1,13 @@
+---
+title: "Forecasting Demand"
+---
+
+**Guiding question:** How many rides will a station — or the system as a whole — see next month, and how far ahead can we actually trust that forecast?
+
+
+**What this page will cover (planned):**
+
+- A time-series model of system-wide (and possibly station- or ward-level) demand
+- How well it captures the seasonal shape already seen in the Overview
+- How far ahead the forecast stays reliable before uncertainty takes over
+

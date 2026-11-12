@@ -1,0 +1,18 @@
+[project]
+name = "bike-sharing"
+version = "0.1.0"
+requires-python = ">=3.13"
+dependencies = [
+    "charset-normalizer>=3.5.2",
+    "folium>=0.20.0",
+    "ftfy>=6.3.1",
+    "geopandas>=1.2.0",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "kaleido>=1.5.0",
+    "nbformat>=5.11.1",
+    "plotly>=7.1.0",
+    "pyarrow>=26.0.0",
+    "rapidfuzz>=3.14.6",
+    "statsmodels>=0.15.0",
+]

@@ -1,0 +1,33 @@
+project:
+  type: website
+  output-dir: ../docs
+  render:
+    - index.qmd
+    - overview.qmd
+    - demand_drivers.qmd
+    - forecast.qmd
+    - capacity.qmd
+    - clusters.qmd
+  resources:
+    - site_assets/*.html
+
+website:
+  title: "Toronto Bikeshare"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: overview.qmd
+        text: Overview
+      - href: demand_drivers.qmd
+        text: What Drives Demand?
+      - href: forecast.qmd
+        text: Forecasting Demand
+      - href: capacity.qmd
+        text: Station Capacity
+      - href: clusters.qmd
+        text: Station Clusters
+
+format:
+  html:
+    theme: cosmo

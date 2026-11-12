@@ -1,0 +1,12 @@
+---
+title: "Station Clusters"
+---
+
+**Guiding question:** Do stations fall into natural groups by usage pattern: commuter hubs, tourist spots, residential areas
+ Does that grouping reveal redundancy or gaps?
+
+
+- Try to clustering stations by their usage style (time-of-day pattern, weekday/weekend split, seasonality, rider type mix)
+- Naming and characterizing the resulting groups (e.g. "downtown commuter," "waterfront/tourist," "residential")
+- Whether cluster membership lines up with ward or geography, or cuts across it?
+

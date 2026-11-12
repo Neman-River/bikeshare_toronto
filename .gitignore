@@ -1,0 +1,33 @@
+# Virtual environment
+.venv/
+
+# macOS
+.DS_Store
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Data files (raw sources + derived outputs)
+bikeshare-ridership-*
+2017 Data/
+bikeshare2018/
+*.parquet
+
+# Personal working notes
+notes.md
+reg_notes.txt
+
+# Downloaded reference geodata
+toronto-neighbourhoods.geojson
+toronto-wards.geojson
+
+# Quarto build artifacts
+.quarto/
+_freeze/
+
+/.quarto/
+**/*.quarto_ipynb

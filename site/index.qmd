@@ -1,0 +1,23 @@
+---
+title: "Toronto Bikeshare Analysis"
+---
+
+Toronto's current bikeshare network grew from 200 stations in 2016 to over 1,000 by 2026, and ridership grew right along with it, from under a million trips a year to nearly 8 million at its peak in 2025.
+
+
+## Contents
+
+**1. [Overview](overview.qmd)** — *What has already happened, and where?*
+: Growth in stations and ridership, the fleet's expand-and-absorb cycle, whether new stations cannibalize the original ones, seasonalities, trips by ward in 2026. This is the descriptive foundation for everything below.
+
+**2. [What Drives Demand?](demand_drivers.qmd)** — *Is it timing, season, or location that matters most?*
+: A regression across time, season, and location features, each factor's contribution.
+
+**3. [Forecasting Demand](forecast.qmd)** — *Time-series prediction per stations/network/(clusters?)*
+
+**4. [Station Capacity](capacity.qmd)** — *Which stations exhausted their capacity, and which ones sit empty?*
+: flags expansion, consolidation, or removal candidates.
+
+**5. [Station Clusters](clusters.qmd)** — *Do stations group into commuter, tourist, or residential patterns?* 
+: Does clusterization make the demand prediction more accurate?
+

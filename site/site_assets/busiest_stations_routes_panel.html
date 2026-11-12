@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<style>
+  html, body { margin: 0; height: 100%; background: #ffffff; }
+  .panel {
+    display: flex;
+    gap: 32px;
+    background: #ffffff;
+    padding: 20px 24px;
+    box-sizing: border-box;
+    height: 100%;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    color: #1a1a1a;
+  }
+  .tables { flex: 1; min-width: 0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; border-bottom: 2px solid #1a1a1a; padding: 6px 8px; }
+  td { padding: 6px 8px; border-bottom: 1px solid #e0e0e0; }
+  caption { text-align: left; font-weight: 700; margin-bottom: 8px; font-size: 16px; }
+</style>
+</head>
+<body>
+  <div class="panel">
+    <div class="tables">
+      <table>
+        <caption>Busiest stations</caption>
+        <tr><th>#</th><th>Station</th><th>Trips</th><th>Avg/day</th></tr>
+        <tr><td>1</td><td>York St / Queens Quay W</td><td>377,997</td><td>101.0</td></tr><tr><td>2</td><td>Bay St / College St (East Side)</td><td>301,047</td><td>80.4</td></tr><tr><td>3</td><td>Bay St / Queens Quay W (Ferry Terminal)</td><td>288,806</td><td>77.1</td></tr><tr><td>4</td><td>Bay St / Wellesley St W</td><td>265,546</td><td>70.9</td></tr><tr><td>5</td><td>Union Station</td><td>263,041</td><td>70.3</td></tr>
+      </table>
+    </div>
+    <div class="tables">
+      <table>
+        <caption>Busiest routes</caption>
+        <tr><th>Start</th><th>End</th><th>Trips</th></tr>
+        <tr><td>Centre Island Ferry Dock</td><td>Ward's Island Ferry Dock</td><td>34,994</td></tr><tr><td>Ward's Island Ferry Dock</td><td>Centre Island Ferry Dock</td><td>19,544</td></tr><tr><td>Centre Island Ferry Dock</td><td>Centre Island</td><td>19,067</td></tr><tr><td>Centre Island</td><td>Ward's Island Ferry Dock</td><td>18,225</td></tr><tr><td>Centre Island</td><td>Centre Island Ferry Dock</td><td>17,513</td></tr>
+      </table>
+    </div>
+  </div>
+</body>
+</html>

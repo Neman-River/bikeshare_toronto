@@ -1,0 +1,86 @@
+[
+  {
+    "objectID": "clusters.html",
+    "href": "clusters.html",
+    "title": "Station Clusters",
+    "section": "",
+    "text": "Guiding question: Do stations fall into natural groups by usage pattern: commuter hubs, tourist spots, residential areas Does that grouping reveal redundancy or gaps?\n\nTry to clustering stations by their usage style (time-of-day pattern, weekday/weekend split, seasonality, rider type mix)\nNaming and characterizing the resulting groups (e.g. “downtown commuter,” “waterfront/tourist,” “residential”)\nWhether cluster membership lines up with ward or geography, or cuts across it?"
+  },
+  {
+    "objectID": "forecast.html",
+    "href": "forecast.html",
+    "title": "Forecasting Demand",
+    "section": "",
+    "text": "Guiding question: How many rides will a station — or the system as a whole — see next month, and how far ahead can we actually trust that forecast?\nWhat this page will cover (planned):\n\nA time-series model of system-wide (and possibly station- or ward-level) demand\nHow well it captures the seasonal shape already seen in the Overview\nHow far ahead the forecast stays reliable before uncertainty takes over"
+  },
+  {
+    "objectID": "overview.html",
+    "href": "overview.html",
+    "title": "Overview",
+    "section": "",
+    "text": "Started in 2016 — after an earlier 2014–2015 pilot — Toronto's Bike Share has grown to 1,098 stations covering all 25 wards. The map below shows how that expansion spread across the city, year by year. The system has grown significantly since 2016, and ridership has grown right along with it.\n\n\n\nThen expanded outward in waves:\n\n\n  \n  \n\n    \n      \n      2016\n      Spadina-Fort York, Toronto Centre, Toronto-Danforth, University-Rosedale, Toronto-St. Paul's, Davenport, Parkdale-High Park, Beaches-East York\n    \n\n    \n      \n      2017\n      Etobicoke-Lakeshore, Scarborough Southwest\n    \n\n    \n      \n      2018\n      Don Valley West, Eglinton-Lawrence\n    \n\n    \n      \n      2019\n      Don Valley East\n    \n\n    \n      \n      2020\n      Scarborough-Guildwood, Scarborough-Rouge Park, York Centre, Humber River-Black Creek, Etobicoke Centre, York South-Weston\n    \n\n    \n      \n      2021–2022\n      Expansion paused\n    \n\n    \n      \n      2023\n      Etobicoke North, Willowdale\n    \n\n    \n      \n      2024\n      Don Valley North, Scarborough Centre\n    \n\n    \n      \n      2025\n      Scarborough-Agincourt, Scarborough North — all 25 wards\n    \n\n  \n\n\n\n\nRidership grew about 5x, from 1.5M trips in 2017 to 7.8M in 2025, and kept rising every year, including 2020. Over the same period the network grew 4x, from 265 to 1,048 stations. Ridership grew faster than the network: trips per station rose from about 5,700 in 2017 to about 7,400 in 2025.\n\n\n\n\nThe expand/absorb cycle shows up directly: years the fleet grows fast (orange) dilute demand per station; slower years (navy) let it catch back up. Rides per station peaked at 7,910 in 2024, the year fleet growth slowed the most, and each expansion wave (2017–2020, then 2025) briefly diluted demand before it recovered. The daily-average chart on the right tells the same. *Treat 2016 and 2026 cautiously- both are partial years.\n\n  View the data behind these charts\n  \n  \n\n\n\nYear\nTrips\nYoY % (trips)\nStations\nYoY % (fleet)\nTrips per station\n\n\n\n\n2016\n0.6M\n\n200\n\n2,928\n\n\n2017\n1.5M\n+155%\n265\n+32%\n5,632\n\n\n2018\n1.9M\n+29%\n359\n+36%\n5,356\n\n\n2019\n2.4M\n+27%\n469\n+31%\n5,201\n\n\n2020\n2.9M\n+19%\n611\n+30%\n4,762\n\n\n2021\n3.6M\n+23%\n627\n+3%\n5,693\n\n\n2022\n4.6M\n+29%\n682\n+9%\n6,768\n\n\n2023\n5.7M\n+24%\n813\n+19%\n7,022\n\n\n2024\n6.9M\n+22%\n879\n+8%\n7,898\n\n\n2025\n7.8M\n+12%\n1,048\n+19%\n7,449\n\n\n2026\n6.8M\n-13%\n1,098\n+5%\n6,210"
+  },
+  {
+    "objectID": "overview.html#fleet-expansion",
+    "href": "overview.html#fleet-expansion",
+    "title": "Overview",
+    "section": "",
+    "text": "Started in 2016 — after an earlier 2014–2015 pilot — Toronto's Bike Share has grown to 1,098 stations covering all 25 wards. The map below shows how that expansion spread across the city, year by year. The system has grown significantly since 2016, and ridership has grown right along with it.\n\n\n\nThen expanded outward in waves:\n\n\n  \n  \n\n    \n      \n      2016\n      Spadina-Fort York, Toronto Centre, Toronto-Danforth, University-Rosedale, Toronto-St. Paul's, Davenport, Parkdale-High Park, Beaches-East York\n    \n\n    \n      \n      2017\n      Etobicoke-Lakeshore, Scarborough Southwest\n    \n\n    \n      \n      2018\n      Don Valley West, Eglinton-Lawrence\n    \n\n    \n      \n      2019\n      Don Valley East\n    \n\n    \n      \n      2020\n      Scarborough-Guildwood, Scarborough-Rouge Park, York Centre, Humber River-Black Creek, Etobicoke Centre, York South-Weston\n    \n\n    \n      \n      2021–2022\n      Expansion paused\n    \n\n    \n      \n      2023\n      Etobicoke North, Willowdale\n    \n\n    \n      \n      2024\n      Don Valley North, Scarborough Centre\n    \n\n    \n      \n      2025\n      Scarborough-Agincourt, Scarborough North — all 25 wards\n    \n\n  \n\n\n\n\nRidership grew about 5x, from 1.5M trips in 2017 to 7.8M in 2025, and kept rising every year, including 2020. Over the same period the network grew 4x, from 265 to 1,048 stations. Ridership grew faster than the network: trips per station rose from about 5,700 in 2017 to about 7,400 in 2025.\n\n\n\n\nThe expand/absorb cycle shows up directly: years the fleet grows fast (orange) dilute demand per station; slower years (navy) let it catch back up. Rides per station peaked at 7,910 in 2024, the year fleet growth slowed the most, and each expansion wave (2017–2020, then 2025) briefly diluted demand before it recovered. The daily-average chart on the right tells the same. *Treat 2016 and 2026 cautiously- both are partial years.\n\n  View the data behind these charts\n  \n  \n\n\n\nYear\nTrips\nYoY % (trips)\nStations\nYoY % (fleet)\nTrips per station\n\n\n\n\n2016\n0.6M\n\n200\n\n2,928\n\n\n2017\n1.5M\n+155%\n265\n+32%\n5,632\n\n\n2018\n1.9M\n+29%\n359\n+36%\n5,356\n\n\n2019\n2.4M\n+27%\n469\n+31%\n5,201\n\n\n2020\n2.9M\n+19%\n611\n+30%\n4,762\n\n\n2021\n3.6M\n+23%\n627\n+3%\n5,693\n\n\n2022\n4.6M\n+29%\n682\n+9%\n6,768\n\n\n2023\n5.7M\n+24%\n813\n+19%\n7,022\n\n\n2024\n6.9M\n+22%\n879\n+8%\n7,898\n\n\n2025\n7.8M\n+12%\n1,048\n+19%\n7,449\n\n\n2026\n6.8M\n-13%\n1,098\n+5%\n6,210"
+  },
+  {
+    "objectID": "overview.html#are-new-stations-cannibalizing-the-original-ones",
+    "href": "overview.html#are-new-stations-cannibalizing-the-original-ones",
+    "title": "Overview",
+    "section": "Are new stations cannibalizing the original ones?",
+    "text": "Are new stations cannibalizing the original ones?\n\nCohort analysis: track the 183 original 2016 stations as a fixed cohort and compare their own growth to the system’s.\n\nThere’s no clear cannibalization signature. The cohort’s trips grew almost every year, just more slowly than the whole system. That’s expected dilution, not cannibalization. The fleet grew to roughly 5x the number of stations around this cohort. The chart on the right makes that gap explicit: indexed to 2017, the entire system reached 523 by 2025 (a 5.2x increase), while the original cohort reached only 202 (roughly 2x) — real growth, just spread across far more stations. The only real stall for the cohort was 2025 (−0.8%), the year with the most expansion. That fits the same expand-then-absorb cycle shown in the Trips per Station chart."
+  },
+  {
+    "objectID": "overview.html#segment-rhythms-members-vs.-casual-riders",
+    "href": "overview.html#segment-rhythms-members-vs.-casual-riders",
+    "title": "Overview",
+    "section": "Segment rhythms: members vs. casual riders",
+    "text": "Segment rhythms: members vs. casual riders\nBeyond year-over-year growth, the network has a daily and seasonal rhythm of its own.\n\nDaily\n\nAt 5 p.m. on almost any weekday, this is what Toronto’s bikeshare network looks like: trips surge to a sharp evening peak, repeating itself every single day. Members cluster almost entirely into the 8 AM and 5-7 PM commute windows. Casual riders spread more evenly across the afternoon — a leisure pattern, not a commute pattern. Across 2023-2025, the 5-7 PM window alone accounts for 20% of all trips (over 4 million) — more than double the morning peak.\n\n\nWeekly\n\nMembers ride most on weekdays, with Tuesday and Wednesday at about 16% of their weekly trips each, then drop to roughly 12% on Saturday and 11% on Sunday, which fits a commuting pattern. Casual riders do the opposite: their trips stay flat at about 12–13% from Monday to Thursday, rise on Friday (14.4%) and peak on the weekend, with Saturday at about 18% of their weekly trips. Members use the bikes for routine travel, while casual riders use them mostly for leisure.\n\n\nYearly\n\nMember share of trips holds at 92-93% in Jan-Feb, drops as low as 65% at the August peak, then climbs straight back to 89% by December — casual/tourist riders show up for the summer and largely disappear for the winter.\n\nRidership follows a strong seasonal cycle. It peaks every July–August, falls to roughly 100–200k trips a month in winter, and each summer is higher than the last: about 0.9M trips a month in 2024, 1.2M in 2025 and 1.25M in 2026. Members make up most trips and look steadier, but their summer peaks levelled off at about 800k in both 2025 and 2026. Casual riders are much more seasonal, dropping to almost nothing in winter. Their peaks have kept rising, from about 270k in 2024 to 410k in 2025 and 470k in 2026, so for now casual riders are driving most of the 2026 growth.\n\n\nYearly as daily time-series\n\nAt daily resolution, we can see that some spikes or dips in network-wide ridership are driven by one specific segment. For example, the June 14, 2025 and May 18, 2026 jumps were driven by Casual riders, while Member ridership stayed close to normal. The August 5, 2024 drop, on the other hand, was driven by Members, with Casual ridership behaving normally. Some events push both segments the same direction; others push them in opposite directions. I’ll explore this further in the time series analysis section. May 18, 2026 and August 5, 2024 are both statutory holidays (Victoria Day and Civic Holiday)."
+  },
+  {
+    "objectID": "overview.html#rides-by-ward-2026",
+    "href": "overview.html#rides-by-ward-2026",
+    "title": "Overview",
+    "section": "Rides by ward, 2026",
+    "text": "Rides by ward, 2026\nRidership isn’t spread evenly: a few downtown wards (Spadina-Fort York, University-Rosedale, Toronto Centre) dominate raw trip counts, partly just because they have more stations. Normalizing by station count shows where demand is actually most intense."
+  },
+  {
+    "objectID": "overview.html#a-few-more-interesting-facts",
+    "href": "overview.html#a-few-more-interesting-facts",
+    "title": "Overview",
+    "section": "A few more interesting facts",
+    "text": "A few more interesting facts\n\nYork St / Queens Quay W is the single busiest station in the system — over 376,000 trips to date, anchored by the financial district and the waterfront. Look at the busiest routes: 4 of the 5 most popular point-to-point trips shuttle back and forth between the Centre Island and Ward’s Island ferry docks — a loop almost nobody would ride to get to work. It’s day-trippers circling the Toronto Islands, not commuters.\nMembers follow a daily, commuter-driven rhythm, while casual riders follow weekly and seasonal patterns. In the next sections, I’ll look at how much of these differences can be explained by time of day, season, weather and other factors such as location, and whether we can predict demand accurately enough to make better decisions about how the network grows and changes."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Toronto Bikeshare Analysis",
+    "section": "",
+    "text": "Toronto’s current bikeshare network grew from 200 stations in 2016 to over 1,000 by 2026, and ridership grew right along with it, from under a million trips a year to nearly 8 million at its peak in 2025."
+  },
+  {
+    "objectID": "index.html#contents",
+    "href": "index.html#contents",
+    "title": "Toronto Bikeshare Analysis",
+    "section": "Contents",
+    "text": "Contents\n\n1. Overview — What has already happened, and where?\n\nGrowth in stations and ridership, the fleet’s expand-and-absorb cycle, whether new stations cannibalize the original ones, seasonalities, trips by ward in 2026. This is the descriptive foundation for everything below.\n\n2. What Drives Demand? — Is it timing, season, or location that matters most?\n\nA regression across time, season, and location features, each factor’s contribution.\n\n\n3. Forecasting Demand — Time-series prediction per stations/network/(clusters?)\n\n4. Station Capacity — Which stations exhausted their capacity, and which ones sit empty?\n\nflags expansion, consolidation, or removal candidates.\n\n5. Station Clusters — Do stations group into commuter, tourist, or residential patterns?\n\nDoes clusterization make the demand prediction more accurate?"
+  },
+  {
+    "objectID": "demand_drivers.html",
+    "href": "demand_drivers.html",
+    "title": "What Drives Demand?",
+    "section": "",
+    "text": "Guiding question: What actually drives demand at a station — the time of day, the season, or where it sits?\nWhat this page will cover (planned):\n\nA regression model of trip volume against timing (hour, day of week), season, and location-based features\nWhich predictors matter most\nWhether the answer differs for members vs. casual riders\nWhat this implies for where station siting should focus effort (location, fleet/rebalancing by time and season?)"
+  },
+  {
+    "objectID": "capacity.html",
+    "href": "capacity.html",
+    "title": "Station Capacity",
+    "section": "",
+    "text": "Guiding question: Which stations are maxed out and turning riders away, and which sit mostly empty, wasting capacity?\n\nHow “full” or “empty” a station runs, relative to its own size and the system average\nStations that look like candidates for expansion (consistently near capacity)\nStations that look like candidates for consolidation or removal (consistently underused)\nHow this picture changes by season and by time of day, since a station empty at 2 pm and full at 5 pm isn’t wasteful — it could be just a commuter station"
+  }
+]

@@ -1,0 +1,14 @@
+---
+title: "What Drives Demand?"
+---
+
+**Guiding question:** What actually drives demand at a station — the time of day, the season, or where it sits?
+
+
+**What this page will cover (planned):**
+
+- A regression model of trip volume against timing (hour, day of week), season, and location-based features
+- Which predictors matter most
+- Whether the answer differs for members vs. casual riders
+- What this implies for where station siting should focus effort (location, fleet/rebalancing by time and season?)
+
